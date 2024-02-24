@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# editor
+.vs/
+.vscode/
+.idea/
+
+# build
+cmake*/
+build/
+target/
+
+# files
+*.o
+*.a
+*.out
+*.dll
+*.lib
+*.obj
+*.exe
+*.lock
+.mdnice/
+*/*.md
