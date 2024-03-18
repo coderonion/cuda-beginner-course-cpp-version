@@ -27,9 +27,9 @@
 
 ## Acknowledgements
 
-Thanks you for the following excellent public learning resources.
+Thanks for the following excellent public learning resources.
 
-- [codingonion/awesome-cuda-rocm-fpga](https://github.com/codingonion/awesome-cuda-rocm-fpga) <img src="https://img.shields.io/github/stars/codingonion/awesome-cuda-rocm-fpga?style=social"/> : A collection of some awesome public NVIDIA CUDA, CUDNN, TensorRT, AMD ROCm and FPGA projects.
+- [codingonion/awesome-cuda-tensorrt-fpga](https://github.com/codingonion/awesome-cuda-tensorrt-fpga) <img src="https://img.shields.io/github/stars/codingonion/awesome-cuda-tensorrt-fpga?style=social"/> : A collection of some awesome public NVIDIA CUDA, TensorRT, AMD ROCm and FPGA projects.
 
 - [codingonion/cuda-beginner-course-cpp-version](https://github.com/codingonion/cuda-beginner-course-cpp-version) <img src="https://img.shields.io/github/stars/codingonion/cuda-beginner-course-cpp-version?style=social"/> : bilibili视频【CUDA 12.1 并行编程入门(C++语言版)】配套代码。
 

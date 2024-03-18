@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(course01_hello_cuda)
+project(course04_array_add_and_minus)
 
 # add_definitions(-arch=sm_70)
 set(CMAKE_CUDA_ARCHITECTURES 70 75 80 86)
@@ -17,6 +17,10 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
-add_executable(course01_hello_cuda course01_hello_cuda.cu)
-set_target_properties(course01_hello_cuda PROPERTIES
+add_executable(course04_array_add_and_minus course04_array_add_and_minus.cu
+        common.h
+        array_add_and_minus_cpu.h
+        array_add_and_minus_gpu.cuh)
+
+set_target_properties(course04_array_add_and_minus PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON)
