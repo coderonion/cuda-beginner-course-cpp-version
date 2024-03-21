@@ -37,6 +37,8 @@ Thanks for the following excellent public learning resources.
 
 - [codingonion/cuda-beginner-course-python-version](https://github.com/codingonion/cuda-beginner-course-python-version) <img src="https://img.shields.io/github/stars/codingonion/cuda-beginner-course-python-version?style=social"/> : bilibili视频【CUDA 12.1 并行编程入门(Python语言版)】配套代码。
 
+- [sangyc10/CUDA-code](https://github.com/sangyc10/CUDA-code) <img src="https://img.shields.io/github/stars/sangyc10/CUDA-code?style=social"/> : bilibili视频教程【CUDA编程基础入门系列（持续更新）】配套代码。
+
 - [NVIDIA CUDA Docs](https://docs.nvidia.com/cuda/) : CUDA Toolkit Documentation.
 
 - [NVIDIA/cuda-samples](https://github.com/NVIDIA/cuda-samples) <img src="https://img.shields.io/github/stars/NVIDIA/cuda-samples?style=social"/> : Samples for CUDA Developers which demonstrates features in CUDA Toolkit.
@@ -50,8 +52,6 @@ Thanks for the following excellent public learning resources.
 - [YouQixiaowu/CUDA-Programming-with-Python](https://github.com/YouQixiaowu/CUDA-Programming-with-Python) <img src="https://img.shields.io/github/stars/YouQixiaowu/CUDA-Programming-with-Python?style=social"/> :  关于书籍CUDA Programming使用了pycuda模块的Python版本的示例代码。
 
 - [QINZHAOYU/CudaSteps](https://github.com/QINZHAOYU/CudaSteps) <img src="https://img.shields.io/github/stars/QINZHAOYU/CudaSteps?style=social"/> : 基于《cuda编程-基础与实践》（樊哲勇 著）的cuda学习之路。
-
-- [sangyc10/CUDA-code](https://github.com/sangyc10/CUDA-code) <img src="https://img.shields.io/github/stars/sangyc10/CUDA-code?style=social"/> : B站视频教程【CUDA编程基础入门系列（持续更新）】配套代码。
 
 - [RussWong/CUDATutorial](https://github.com/RussWong/CUDATutorial) <img src="https://img.shields.io/github/stars/RussWong/CUDATutorial?style=social"/> : A CUDA tutorial to make people learn CUDA program from 0.
 
