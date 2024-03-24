@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <iostream>
+#include <cudaTypedefs.h>
 
 using namespace std;
 
@@ -20,9 +21,27 @@ int main()
             std::cout << "cudaSetDevice error info: " << cuda_error_info << std::endl;
             continue;
         }
+        int driver_version = 0;
+        int runtime_version = 0;
+        // Returns the latest version of CUDA supported by the driver
+        cuda_error_info = cudaDriverGetVersion(&driver_version);
+        if(cuda_error_info != cudaSuccess) {
+            std::cout << "cudaDriverGetVersion error info: " << cuda_error_info << std::endl;
+            continue;
+        }
+        // Returns the CUDA Runtime version
+        cuda_error_info = cudaRuntimeGetVersion(&runtime_version);
+        if(cuda_error_info != cudaSuccess) {
+            std::cout << "cudaRuntimeGetVersion error info: " << cuda_error_info << std::endl;
+            continue;
+        }
         // CUDA device properties
         cudaDeviceProp prop;
-        cudaGetDeviceProperties(&prop, device_id);
+        cuda_error_info = cudaGetDeviceProperties(&prop, device_id);
+        if(cuda_error_info != cudaSuccess) {
+            std::cout << "cudaGetDeviceProperties error info: " << cuda_error_info << std::endl;
+            continue;
+        }
         // CUDA device name
         char* device_name = prop.name;
         // CUDA device compute capability
@@ -54,21 +73,22 @@ int main()
         int* device_max_threads_dim = prop.maxThreadsDim;
         // Maximum size of each dimension of a grid
         int* device_max_grid_size = prop.maxGridSize;
-        printf(" Device %d: %s\n", device_id, device_name);
-        printf(" CUDA Capability Major/Minor version number:    %d.%d\n", device_major_compute_capability, device_minor_compute_capability);
-        printf(" Total amount of global memory:                 %.0lf MBytes (%lld bytes)\n", device_total_global_mem / (1024.0 * 1024.0), device_total_global_mem);
-        printf(" GPU Max Clock rate:                            %.0f MHz\n", device_clock_rate / (1000.0));
-        printf(" Memory Clock rate:                             %.0f MHz\n", device_memory_clock_rate / (1000.0));
-        printf(" Memory Bus Width:                              %d-bit\n", device_memory_bus_width);
-        printf(" L2 Cache Size:                                 %d bytes\n", device_l2_cache_size);
-        printf(" Total amount of constant memory:               %lld bytes\n", device_total_const_mem);
-        printf(" Total amount of shared memory per block:       %lld bytes\n", device_shared_mem_per_block);
-        printf(" Total number of registers available per block: %d\n", device_regs_per_block);
-        printf(" Warp Size:                                     %d\n", device_warp_size);
-        printf(" Maximum number of threads per multiprocessor:  %d\n", device_max_threads_per_multi_processor);
-        printf(" Maximum number of threads per block:           %d\n", device_max_threads_per_block);
-        printf(" Max dimension size of a thread block (x,y,z):  (%d, %d, %d)\n", device_max_threads_dim[0], device_max_threads_dim[1], device_max_threads_dim[2]);
-        printf(" Max dimension size of a grid size (x,y,z):     (%d, %d, %d)\n", device_max_grid_size[0], device_max_grid_size[1], device_max_grid_size[2]);
+        printf("\nDevice %d: \"%s\"\n", device_id, device_name);
+        printf("    CUDA Driver Version / Runtime Version:         %d.%d / %d.%d\n", driver_version / 1000, (driver_version % 100) / 10, runtime_version / 1000, (runtime_version % 100) / 10);
+        printf("    CUDA Capability Major/Minor version number:    %d.%d\n", device_major_compute_capability, device_minor_compute_capability);
+        printf("    Total amount of global memory:                 %.0lf MBytes (%lld bytes)\n", device_total_global_mem / (1024.0 * 1024.0), device_total_global_mem);
+        printf("    GPU Max Clock rate:                            %.0f MHz\n", device_clock_rate / (1000.0));
+        printf("    Memory Clock rate:                             %.0f MHz\n", device_memory_clock_rate / (1000.0));
+        printf("    Memory Bus Width:                              %d-bit\n", device_memory_bus_width);
+        printf("    L2 Cache Size:                                 %d bytes\n", device_l2_cache_size);
+        printf("    Total amount of constant memory:               %lld bytes\n", device_total_const_mem);
+        printf("    Total amount of shared memory per block:       %lld bytes\n", device_shared_mem_per_block);
+        printf("    Total number of registers available per block: %d\n", device_regs_per_block);
+        printf("    Warp Size:                                     %d\n", device_warp_size);
+        printf("    Maximum number of threads per multiprocessor:  %d\n", device_max_threads_per_multi_processor);
+        printf("    Maximum number of threads per block:           %d\n", device_max_threads_per_block);
+        printf("    Max dimension size of a thread block (x,y,z):  (%d, %d, %d)\n", device_max_threads_dim[0], device_max_threads_dim[1], device_max_threads_dim[2]);
+        printf("    Max dimension size of a grid size (x,y,z):     (%d, %d, %d)\n", device_max_grid_size[0], device_max_grid_size[1], device_max_grid_size[2]);
     }
     return 0;
 }
