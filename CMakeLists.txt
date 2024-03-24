@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(cuda-beginner-course-cpp-version)
+
+add_subdirectory(course01_hello_cuda)
+add_subdirectory(course02_cuda_device_properties)
+add_subdirectory(course04_array_add_and_minus)

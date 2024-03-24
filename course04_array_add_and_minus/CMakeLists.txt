@@ -18,8 +18,8 @@ set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 add_executable(course04_array_add_and_minus course04_array_add_and_minus.cu
-        common.h
-        array_add_and_minus_cpu.h
+        common.hpp
+        array_add_and_minus_cpu.hpp
         array_add_and_minus_gpu.cuh)
 
 set_target_properties(course04_array_add_and_minus PROPERTIES

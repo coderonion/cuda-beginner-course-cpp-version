@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
 
-#include "array_add_and_minus_cpu.h"
+#include "array_add_and_minus_cpu.hpp"
 #include "array_add_and_minus_gpu.cuh"
 
 using namespace std::chrono;
