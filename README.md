@@ -10,9 +10,9 @@
 ## Progress
 | Section | Videos                                                       | Codes                                         |
 | :------ | :----------------------------------------------------------- | :-------------------------------------------- |
-| 01      | [第1集 NVIDIA CUDA介绍及Windows开发环境安装](https://www.bilibili.com/video/BV1Sj411H7Qq/) | /                                            |
+| 01      | [第1集 CUDA介绍及Windows开发环境安装](https://www.bilibili.com/video/BV1Sj411H7Qq/) | /                                            |
 | 02      | [第2集 Ubuntu系统下安装CUDA开发环境](https://www.bilibili.com/video/BV1je411U7yX/) | /                                            |
-| 03      | [第3集 CUDA设备信息查看及跨平台编译第一个CUDA程序](https://www.bilibili.com/video/BV1oc411x7Gt/) | [course01_hello_cuda](./course01_hello_cuda/) |
+| 03      | [第3集 Windows和Ubuntu下运行第一个CUDA程序](https://www.bilibili.com/video/BV1oc411x7Gt/) | [course01_hello_cuda](./course01_hello_cuda/) |
 | 04      | [第4集 你好, CUDA!](https://www.bilibili.com/video/BV1WtaQetESu/) | [course01_hello_cuda](./course01_hello_cuda/) |
 |         |                                                              |                                               |
 
@@ -28,6 +28,8 @@
 ## Acknowledgements
 
 Thanks for the following excellent public learning resources.
+
+- [codingonion/awesome-cuda-and-hpc](https://github.com/codingonion/awesome-cuda-and-hpc) <img src="https://img.shields.io/github/stars/codingonion/awesome-cuda-and-hpc?style=social"/> : A collection of some awesome public CUDA, cuBLAS, TensorRT and High Performance Computing (HPC) projects.
 
 - [NVIDIA CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/) : CUDA Toolkit Documentation.
 
@@ -57,7 +59,7 @@ Thanks for the following excellent public learning resources.
 
 - [RussWong/CUDATutorial](https://github.com/RussWong/CUDATutorial) <img src="https://img.shields.io/github/stars/RussWong/CUDATutorial?style=social"/> : A CUDA tutorial to make people learn CUDA program from 0.
 
-- [DefTruth//CUDA-Learn-Notes](https://github.com/DefTruth//CUDA-Learn-Notes) <img src="https://img.shields.io/github/stars/DefTruth//CUDA-Learn-Notes?style=social"/> : 🎉CUDA/C++ 笔记 / 大模型手撕CUDA / 技术博客，更新随缘: flash_attn、sgemm、sgemv、warp reduce、block reduce、dot product、elementwise、softmax、layernorm、rmsnorm、hist etc.
+- [DefTruth//CUDA-Learn-Notes](https://github.com/DefTruth/CUDA-Learn-Notes) <img src="https://img.shields.io/github/stars/DefTruth/CUDA-Learn-Notes?style=social"/> : 🎉CUDA/C++ 笔记 / 大模型手撕CUDA / 技术博客，更新随缘: flash_attn、sgemm、sgemv、warp reduce、block reduce、dot product、elementwise、softmax、layernorm、rmsnorm、hist etc.
 
 - [BBuf/how-to-optim-algorithm-in-cuda](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) <img src="https://img.shields.io/github/stars/BBuf/how-to-optim-algorithm-in-cuda?style=social"/> : how to optimize some algorithm in cuda.
 

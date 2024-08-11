@@ -2,11 +2,12 @@
 
 // CUDA核函数（CPU主机端调用，GPU设备端执行）
 // CUDA核函数标识符：__global__
+// CUDA核函数返回值类型必须是void
 __global__ void hello_cuda_from_gpu() {
     printf("GPU: 你好, CUDA! (C++版)\n");
 }
 
-// 普通函数5（CPU主机端调用和执行）
+// 普通函数（CPU主机端调用和执行）
 void hello_cuda_from_cpu() {
     printf("CPU: 你好, CUDA! (C++版)\n");
 }
