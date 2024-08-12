@@ -13,7 +13,7 @@
 | 01      | [第1集 CUDA介绍及Windows开发环境安装](https://www.bilibili.com/video/BV1Sj411H7Qq/) | /                                            |
 | 02      | [第2集 Ubuntu系统下安装CUDA开发环境](https://www.bilibili.com/video/BV1je411U7yX/) | /                                            |
 | 03      | [第3集 Windows和Ubuntu下运行第一个CUDA程序](https://www.bilibili.com/video/BV1oc411x7Gt/) | [course01_hello_cuda](./course01_hello_cuda/) |
-| 04      | [第4集 你好, CUDA!](https://www.bilibili.com/video/BV1WtaQetESu/) | [course01_hello_cuda](./course01_hello_cuda/) |
+| 04      | [第4集 你好, CUDA!](https://www.bilibili.com/video/BV1jueweLEQ1/) | [course01_hello_cuda](./course01_hello_cuda/) |
 |         |                                                              |                                               |
 
 
